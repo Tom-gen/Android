@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hanbit.user.myapp160702.ImageActivity">
+
+    <TextView
+        android:id="@+id/tvImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="이미지뷰"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@id/tvImage"
+        android:src="@drawable/tulips" />
+
+    <Button
+        android:id="@+id/nextImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivImage"
+        android:text="다음이미지" />
+
+    <Button
+        android:id="@+id/prevImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivImage"
+        android:layout_toRightOf="@id/nextImage"
+        android:text="이전이미지" />
+</RelativeLayout>

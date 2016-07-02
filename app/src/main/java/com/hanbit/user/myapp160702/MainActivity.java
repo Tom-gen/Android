@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button btCalc, btCalendar;
+    Button btCalc, btCalendar, btImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,8 +16,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btCalc = (Button) findViewById(R.id.btCalc);
         btCalendar = (Button) findViewById(R.id.btCalendar);
+        btImageView = (Button) findViewById(R.id.btImageView);
         btCalc.setOnClickListener(this);
         btCalendar.setOnClickListener(this);
+        btImageView.setOnClickListener(this);
     }
 
 //    public void onClickOpenCalc(View view) {
@@ -49,6 +51,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btCalendar:
                 this.startActivity(new Intent(this, CalendarActivity.class));
+                break;
+            case R.id.btImageView:
+                this.startActivity(new Intent(this, ImageActivity.class));
                 break;
         }
     }

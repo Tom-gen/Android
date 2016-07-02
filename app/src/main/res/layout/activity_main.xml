@@ -16,4 +16,9 @@
         android:layout_height="wrap_content"
         android:text="Calc" />
 
+    <Button
+        android:id="@+id/btImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ImageView" />
 </LinearLayout>

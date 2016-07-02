@@ -76,7 +76,6 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             if (num2 != 0)
                 value = num1 / num2;
         }
-        
         tvResult.setText(Double.toString(value));
     }
 
