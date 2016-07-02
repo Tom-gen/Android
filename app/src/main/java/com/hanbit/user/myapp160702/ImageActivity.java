@@ -41,6 +41,7 @@ public class ImageActivity extends Activity implements View.OnClickListener {
                 currentImage %= 3;
                 ivImage.setImageResource(ImageID[currentImage]);
                 break;
+
         }
 
 
