@@ -32,7 +32,7 @@ public class ImageActivity extends Activity implements View.OnClickListener {
                 currentImage++;
                 currentImage %= 3;
                 ivImage.setImageResource(ImageID[currentImage]);
-
+//                btNext.setVisibility(0);
                 break;
             case R.id.prevImage:
                 currentImage--;

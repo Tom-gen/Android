@@ -1,4 +1,4 @@
-package com.hanbit.user.myapp160702;
+package com.hanbit.user.myapp160702.calc;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.hanbit.user.myapp160702.MainActivity;
+import com.hanbit.user.myapp160702.R;
 
 public class CalcActivity extends Activity implements View.OnClickListener {
     EditText et1, et2;
@@ -63,20 +66,44 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             return;
         }
 
-        if (view.equals(btPlus)) {
-            value = num1 + num2;
+        CalcService service = new CalcServiceImpt();
+        switch (view.getId()) {
+            case R.id.btPlus:
+//                value = num1 + num2;
+                value = service.plus(num1, num2);
+                break;
+            case R.id.btMinus:
+//                value = num1 - num2;
+                value = service.minus(num1, num2);
+                break;
+            case R.id.btMulti:
+//                value = num1 * num2;
+                value = service.multiply(num1, num2);
+                break;
+            case R.id.btDivide:
+//                if (num2 != 0)
+//                    value = num1 / num2;
+                value = service.divide(num1, num2);
+                break;
+            default:
+                break;
         }
-        if (view.equals(btMinus)) {
-            value = num1 - num2;
-        }
-        if (view.equals(btMulti)) {
-            value = num1 * num2;
-        }
-        if (view.equals(btDivide)) {
-            if (num2 != 0)
-                value = num1 / num2;
-        }
-        tvResult.setText(Double.toString(value));
+        tvResult.setText("계산결과:" + value);
+
+//        if (view.equals(btPlus)) {
+//            value = num1 + num2;
+//        }
+//        if (view.equals(btMinus)) {
+//            value = num1 - num2;
+//        }
+//        if (view.equals(btMulti)) {
+//            value = num1 * num2;
+//        }
+//        if (view.equals(btDivide)) {
+//            if (num2 != 0)
+//                value = num1 / num2;
+//        }
+//        tvResult.setText(Double.toString(value));
     }
 
     @Override

@@ -30,7 +30,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ivImage"
-        android:text="다음이미지" />
+        android:text="다음이미지"
+        android:textSize="30dp" />
 
     <Button
         android:id="@+id/prevImage"
@@ -38,5 +39,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/ivImage"
         android:layout_toRightOf="@id/nextImage"
-        android:text="이전이미지" />
+        android:text="이전이미지"
+        android:textSize="30dp" />
 </RelativeLayout>

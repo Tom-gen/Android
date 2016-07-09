@@ -6,19 +6,50 @@
 
     <Button
         android:id="@+id/btCalendar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calendar" />
+        android:text="Calendar"
+        android:textSize="30dp" />
 
     <Button
         android:id="@+id/btCalc"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calc" />
+        android:text="Calc"
+        android:textSize="30dp" />
 
     <Button
         android:id="@+id/btImageView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ImageView" />
+        android:text="ImageView"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btConnectWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="구글연결"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btKaup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="kaup지수 계산"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btJoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:textSize="30dp" />
 </LinearLayout>
